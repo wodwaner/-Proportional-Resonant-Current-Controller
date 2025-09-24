@@ -1,0 +1,37 @@
+
+------------------------------------------------------------------------------------------------------------------------
+!TASK: Migrating from source-tool 'C2000 Compiler' (com.ti.ccstudio.buildDefinitions.C2000_22.6.exe.compilerDebug.345899787) ... [Sun Sep 21 19:36:18 BRT 2025]
+
+	!CONFIGURATION: 'Debug' (com.ti.ccstudio.buildDefinitions.C2000.Default.1914192847)
+
+		!TOOL: 'C2000 Compiler' (com.ti.ccstudio.buildDefinitions.C2000_TICLANG_1.0.exe.compilerDebug.818453623)
+
+			!NOTE: Source-tool setting '--opt_for_speed=3 -O2' was migrated to target-tool setting '-Os'
+				c29clang's -Os option enables moderately aggressive performance optimizations combined with additional code size optimizations
+
+			!NOTE: Source-tool default '--c89 --relaxed_ansi' was migrated to target-tool setting '-std=gnu90'
+
+			!NOTE: Source-tool default '--c++03 --relaxed_ansi' was migrated to target-tool setting '-std=gnu++03'
+
+			!NOTE: Source-tool setting: 
+					--include_path="${COM_TI_C2000WARE_INCLUDE_PATH}" --include_path="${PROJECT_ROOT}" --include_path="${CG_TOOL_ROOT}/include" --include_path="${C2000Ware}/device_support/f28e12x/headers/include/" --include_path="${C2000Ware}/device_support/f28e12x/common/include/" --include_path="${C2000Ware}/libraries/math/IQmath/c28/include" 
+				was migrated to target-tool setting: 
+					-I"${COM_TI_C2000WARE_INCLUDE_PATH}" -I"${PROJECT_ROOT}" -I"${CG_TOOL_ROOT}/include" -I"${C2000Ware}/device_support/f28e12x/headers/include/" -I"${C2000Ware}/device_support/f28e12x/common/include/" -I"${C2000Ware}/libraries/math/IQmath/c28/include"
+
+			!NOTE: Source-tool setting '--define=DEBUG --define=_LAUNCHXL_F28E12X' was migrated to target-tool setting '-DDEBUG -D_LAUNCHXL_F28E12X'
+
+			!NOTE: Source-tool default '-g' was migrated to target-tool setting '-gdwarf-3'
+
+			!NOTE: Source-tool setting '--gen_func_subsections=on' was migrated to target-tool setting '-ffunction-sections'
+
+			!WARNING: Source-tool setting '--fp_mode=relaxed' cannot be migrated
+				cl2000's --fp_mode=relaxed option ignored; --fp_mode=relaxed does not map directly to a c29clang option, however, c29clang's -ffast-math is its closest functionally equivalent option
+
+			!NOTE: The following Clang-Tidy checks were enabled for the project - see project's 'Properties > Clang-Tidy' page to enable/disable additional checks: 
+					c29migration-c28-builtins, c29migration-c28-pragmas, c29migration-c28-stdlib
+
+			!WARNING: The following source-tool settings were not migrated because no migration rules have been defined - please migrate these settings manually, if applicable: 
+					-ml -mt --float_support=fpu32 --fp_reassoc=on --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi
+
+!END_TASK: [Sun Sep 21 19:36:18 BRT 2025]
+

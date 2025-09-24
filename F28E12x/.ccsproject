@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVariant value="50:Theia-based"/>
+	<ccsVersion value="70.2.0"/>
+	<deviceFamily value="C2000"/>
+	<executableActions value=""/>
+	<createSlaveProjects value=""/>
+	<templateProperties value="id=mcpwm_ex1_basic_pwm.projectspec.mcpwm_ex1_basic_pwm"/>
+	<origin value="C:/Users/wodwa/Desktop/F28EP12x_3ph"/>
+	<filesToOpen value=""/>
+	<connection value="common/targetdb/connections/TIXDS110_Connection.xml"/>
+	<activeTargetConfiguration value="targetConfigs/TMS320F28E120SCS.ccxml"/>
+	<isTargetConfigurationManual value="false"/>
+</projectOptions>
